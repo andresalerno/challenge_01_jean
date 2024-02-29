@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS contato;
+
+CREATE TABLE contato (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  email UNIQUE NOT NULL,
+  assunto TEXT NOT NULL,
+  descricao TEXT NOT NULL,
+);
